@@ -1,0 +1,25 @@
+{
+  "name": "universal-redux-starter",
+  "version": "0.0.1",
+  "description": "Minimal starter for using universal-redux npm package",
+  "scripts": {
+    "build": "universal-redux-build",
+    "dev-server": "universal-redux-server",
+    "dev": "concurrent --kill-others \"npm run watch-client\" \"npm run dev-server\"",
+    "watch-client": "universal-redux-watch"
+  },
+  "author": {
+    "name": "Buck DeFore"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "universal-redux": "3.0.0-beta3"
+  },
+  "devDependencies": {
+    "concurrently": "1.0.0",
+    "react": "^0.14.3",
+    "react-dom": "^0.14.3",
+    "react-redux": "4.0.0",
+    "react-router": "^2.0.0-rc4"
+  }
+}
