@@ -13,7 +13,7 @@
   },
   "license": "MIT",
   "dependencies": {
-    "universal-redux": "2.2.3"
+    "universal-redux": "^2.2.4"
   },
   "devDependencies": {
     "concurrently": "1.0.0",
