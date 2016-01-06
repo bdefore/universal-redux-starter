@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "description": "Minimal starter for using universal-redux npm package",
   "scripts": {
+    "start": "NODE_ENV=production universal-redux-server",
     "build": "universal-redux-build",
     "dev-server": "universal-redux-server",
     "dev": "concurrent --kill-others \"npm run watch-client\" \"npm run dev-server\"",
