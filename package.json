@@ -7,6 +7,7 @@
     "build": "universal-redux-build",
     "dev-server": "universal-redux-server",
     "dev": "concurrent --kill-others \"npm run watch-client\" \"npm run dev-server\"",
+    "postinstall": "npm run build",
     "watch-client": "universal-redux-watch"
   },
   "author": {
