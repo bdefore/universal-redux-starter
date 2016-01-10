@@ -4,7 +4,7 @@
   "description": "Minimal starter for using universal-redux npm package",
   "scripts": {
     "build": "universal-redux-build",
-    "dev-server": "universal-redux-server",
+    "dev-server": "node bin/server.js",
     "dev": "concurrent --kill-others \"npm run watch-client\" \"npm run dev-server\"",
     "watch-client": "universal-redux-watch"
   },
