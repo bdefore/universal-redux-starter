@@ -13,14 +13,14 @@
   },
   "license": "MIT",
   "dependencies": {
-    "universal-redux": "3.0.0-rc7"
+    "universal-redux": "3.0.0-rc14"
   },
   "devDependencies": {
     "concurrently": "1.0.0",
     "react": "^0.14.6",
     "react-dom": "^0.14.6",
     "react-redux": "4.0.6",
-    "react-router": "2.0.0-rc4",
-    "redux-simple-router": "2.0.1"
+    "react-router": "2.0.0-rc5",
+    "redux-simple-router": "2.0.3"
   }
 }
