@@ -2,6 +2,10 @@
   "name": "universal-redux-starter",
   "version": "0.0.1",
   "description": "Minimal starter for using universal-redux npm package",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bdefore/universal-redux-starter.git"
+  },
   "scripts": {
     "build": "universal-redux-build",
     "dev-server": "universal-redux-server",
@@ -13,7 +17,7 @@
   },
   "license": "MIT",
   "dependencies": {
-    "universal-redux": "3.0.0-rc15"
+    "universal-redux": "3.0.0-rc20"
   },
   "devDependencies": {
     "concurrently": "1.0.0",
