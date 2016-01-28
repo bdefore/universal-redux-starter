@@ -8,7 +8,7 @@
   },
   "scripts": {
     "build": "universal-redux-build",
-    "dev-server": "universal-redux-server",
+    "dev-server": "NODE_PATH=./src universal-redux-server",
     "dev": "concurrent --kill-others \"npm run watch-client\" \"npm run dev-server\"",
     "watch-client": "universal-redux-watch"
   },
@@ -17,7 +17,7 @@
   },
   "license": "MIT",
   "dependencies": {
-    "universal-redux": "3.0.0-rc20"
+    "universal-redux": "3.0.0-rc21"
   },
   "devDependencies": {
     "concurrently": "1.0.0",
