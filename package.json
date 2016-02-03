@@ -8,6 +8,7 @@
   },
   "scripts": {
     "build": "universal-redux-build",
+    "server": "NODE_ENV=production NODE_PATH=./src universal-redux-server",
     "dev-server": "NODE_PATH=./src universal-redux-server",
     "dev": "concurrent --kill-others \"npm run watch-client\" \"npm run dev-server\"",
     "watch-client": "universal-redux-watch"
