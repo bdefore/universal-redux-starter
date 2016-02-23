@@ -1,18 +1,22 @@
 import React from 'react';
-import { Router } from 'react-router';
+import { Router, browserHistory } from 'react-router';
 import { Provider } from 'react-redux';
 import { ReduxAsyncConnect } from 'redux-async-connect';
+import getRoutes from './routes';
 
-export default (store, { routes, history }) => {
+export default (store, providers, devComponent) => {
   const component = (
-    <Router render={(props) => <ReduxAsyncConnect {...props} />} history={history}>
-      {routes}
+    <Router render={(props) => <ReduxAsyncConnect {...props} />} history={browserHistory}>
+      {getRoutes(store)}
     </Router>
   );
   const root = (
     <Provider store={store} key="provider">
-      {component}
+      <div>
+        {component}
+        {devComponent}
+      </div>
     </Provider>
   );
-  return Promise.resolve({ root });
+  return Promise.resolve(root);
 };
