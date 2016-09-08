@@ -2,12 +2,17 @@
   "name": "universal-redux-starter",
   "version": "0.0.1",
   "description": "Minimal starter for using universal-redux npm package",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bdefore/universal-redux-starter.git"
+  },
   "scripts": {
     "start": "NODE_ENV=production universal-redux-server",
     "build": "universal-redux-build",
-    "dev-server": "universal-redux-server",
-    "dev": "concurrent --kill-others \"npm run watch-client\" \"npm run dev-server\"",
     "postinstall": "npm run build",
+    "start": "NODE_ENV=production NODE_PATH=./src universal-redux-server",
+    "dev-server": "NODE_PATH=./src universal-redux-server",
+    "dev": "concurrently --kill-others \"npm run watch-client\" \"npm run dev-server\"",
     "watch-client": "universal-redux-watch"
   },
   "author": {
@@ -15,14 +20,14 @@
   },
   "license": "MIT",
   "dependencies": {
-    "universal-redux": "^2.2.4"
+    "universal-redux": "4.1.0"
   },
   "devDependencies": {
-    "concurrently": "1.0.0",
-    "react": "^0.14.3",
-    "react-dom": "^0.14.3",
-    "react-redux": "4.0.0",
-    "react-router": "1.0.3",
-    "redux-simple-router": "1.0.2"
+    "concurrently": "2.2.0",
+    "react": "^15.2.0",
+    "react-dom": "^15.2.0",
+    "react-redux": "4.4.5",
+    "react-router": "2.5.2",
+    "react-router-redux": "3.0.0"
   }
 }
